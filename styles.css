@@ -7,6 +7,7 @@
 body {
   font-family: "Inter", system-ui, sans-serif;
   line-height: 1.5;
+  color: #252B42;
 }
 
 .header {
@@ -165,7 +166,55 @@ body {
   outline-offset: 4px;
 }
 
+/* Features */
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 15px;
+}
 
+.features h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.subtext {
+  margin: 0 15px;
+  font-size: 28px;
+  font-weight: 400;
+  color: #374754;
+}
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 75px;
+  padding: 30px 20px;
+  min-height: 750px;
+  margin: 0 81.5px;
+}
+
+.feature__icon {
+  width: 61px;
+  height: 61px;
+  margin-bottom: 24px;
+}
+
+.feature__title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.feature__text {
+  font-size: 18px;
+  font-weight: 400;
+}
 
 /* Desktop */
 @media (min-width: 1024px) {
