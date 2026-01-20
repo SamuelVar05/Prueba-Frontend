@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="background">
+    </div>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <img src="assets/images/logo.png" alt="Figma Land" />
+            </div>
+
+            <ul class="nav__links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="nav__social">
+                <a href="#"><img src="assets/images/social/twitter.svg" alt="Twitter" /></a>
+                <a href="#"><img src="assets/images/social/facebook.svg" alt="Facebook" /></a>
+                <a href="#"><img src="assets/images/social/linkedin.svg" alt="LinkedIn" /></a>
+            </div>
+
+            <button class="nav__toggle" aria-label="Abrir menú">
+                <img src="assets/images/menu.svg" alt="Menu" />
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero"></section>
+        <section class="features"></section>
+        <section class="cta"></section>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <!-- Hamburger menu -->
+    <script>
+        const toggle = document.querySelector('.nav__toggle');
+        const menu = document.querySelector('.nav__links');
+
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>
