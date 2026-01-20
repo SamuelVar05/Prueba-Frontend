@@ -257,6 +257,10 @@ body {
   font-weight: 400;
 }
 
+.subtext--desktop {
+  display: none;
+}
+
 /* Desktop */
 @media (min-width: 1024px) {
 
@@ -357,5 +361,13 @@ body {
   .video__play {
     width: 187px;
     height: 187px;
+  }
+
+  .subtext--mobile {
+    display: none;
+  }
+
+  .subtext--desktop {
+    display: block;
   }
 }
